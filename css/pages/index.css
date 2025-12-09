@@ -1,0 +1,128 @@
+div.top-img {
+    position: relative;
+    height: 100vh;
+    background-image: url(../../images/bac.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+@media (width < 1000px){
+    div.top-img {
+        background-position:left;
+    }
+}
+
+.content {
+    position: absolute;
+    top:50%;
+    margin-left: 10%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+
+    & .lifestyle {
+
+        text-transform: uppercase;
+        font-size: 1.7rem;
+    }
+
+    & .men {
+        margin-top: 0.7rem;
+        font-weight: bold;
+    }
+
+    & .sale {
+        margin-block: 0.5rem;
+        font-weight: bold;
+    }
+
+    & .sale span {
+        margin-left: 0.8rem;
+        color: crimson;
+    }
+
+    & .free-shipping {
+        font-size: 1.5rem;
+    }
+
+    & button {
+        background-color: black;
+        color: white;
+        margin-top: 0.9rem;
+        font-size: 0.9rem;
+        padding: 0.6rem 1.6rem;
+        border-radius: 5px;
+    }
+
+}
+
+main h1.recomended {
+    margin: 2.3rem 0 2rem 2%;
+}
+
+@media (width < 600px) {
+    main h1.recomended {
+        margin: 2.3rem 0 2rem 2%;
+        font-size: 1.4rem;
+    }
+}
+
+main section.products.flex {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+
+    & article.card {
+        border-radius: 5px;
+       transition: 0.5s;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 1px -1px, rgba(0, 0, 0, 0.14) 0px 1px 1px 0px, rgba(0, 0, 0, 0.12) 0px 1px 3px 0px;
+    }
+
+    & article.card:hover {
+        scale: 1.07;
+    }
+
+    & img {
+        border-radius: 5px 5px 0 0 ;
+    }
+    & .card .con {
+        background-color: #fff;
+        border-radius: 0 0 5px 5px;
+    }
+    & .card .con .title {
+        padding-top: 0.7rem;
+        padding-inline: 0.4rem;
+        text-transform: capitalize;
+    }
+    & .card .con .description {
+        padding-inline: 0.4rem;
+        margin-top: 0.4rem;
+        margin-bottom: 0.6rem;
+        font-size: 0.8rem;
+       line-height: 1.1rem;
+    }
+
+    & .card .con .price {
+        margin-left: 0.88rem;
+        font-size: 0.9rem;
+        color: rgb(199, 0, 40);
+        font-weight: bold;
+    }  
+    & .card .con .add-to-cart{
+        background-color: var(--blue-button);
+        color: #fff;
+        margin-right: 0.88rem;
+        padding: 6px 8px;
+        border-radius: 4px;
+        gap: 0.33rem;
+    }  
+
+    & .fa-solid {
+        color: #fff;
+    }
+
+
+}
+
+

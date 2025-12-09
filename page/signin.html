@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign in</title>
+    <link rel="shortcut icon" href="../images/bag-shopping-solid.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/register.css">
+</head>
+<body style="height: 100vh;
+display: grid;
+grid-template-rows: auto 1fr auto;
+align-items: center;
+">
+    <header class="flex">
+        <a href="../index.html" class="logo">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span style="font-weight: bold;">AWU</span>
+            <p style="letter-spacing: 0.5px;">Shopping</p>
+        </a>
+
+        <div class="links">
+            <a style="position: relative;" class="cart" href="cart.html">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="products-number">2</span>
+                $0.00
+            </a>
+            <a class="sign-in" href="signin.html">
+                <i class="fa-sharp fa-solid fa-arrow-right-to-bracket"></i>
+                Sign in</a>
+            <a class="register" href="register.html">
+                <i class="fa-solid fa-user-plus"></i>
+                Register</a>
+        </div>
+    </header>
+
+
+<main>
+    <form action="">
+        <label for="">Email Address</label><br>
+        <input type="email" required><br>
+        <label for="">password</label><br>
+        <input type="password" required><br>
+        <input type="checkbox" id="check">
+        <label for="check">Check me out</label><br>
+        <button value="submit"> <a href="../index.html">Sign in</a></button>
+    </form>
+</main>
+
+
+    <footer style="    text-align: center;
+    background-color: var(--footer-bg);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding-block: 1rem;
+    margin-top:3rem;
+    color: white;
+    font-size: 17px;">
+        Designed  and developed by <span style="color: #ff7790;
+        text-transform: capitalize;">Mostafa gamal</span> 2024.
+    </footer>
+</body>
+  </body>
+</html>
